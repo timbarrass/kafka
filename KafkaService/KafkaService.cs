@@ -43,7 +43,7 @@ namespace KafkaService
         public void Stop()
         {
             var dir = ConfigurationManager.AppSettings["KafkaInstallDir"];
-            EventLog.WriteEntry("Kafka and Zookeeper", "Starting Kafka from " + dir);
+            EventLog.WriteEntry("Kafka and Zookeeper", "Stopping Kafka from " + dir);
 
             var zookeeperStop = new ProcessStartInfo
             {
